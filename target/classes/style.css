@@ -1,0 +1,15 @@
+.text-area-underline-text .text {
+    -fx-underline: true ;
+}
+.text-area-line-text .text {
+    -fx-underline: false ;
+}
+.red {
+    -fx-text-fill: red ;
+}
+.green {
+    -fx-text-fill: green ;
+}
+.blue {
+    -fx-text-fill: blue ;
+}
