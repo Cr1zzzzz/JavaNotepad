@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab4.HelloController">
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="Tf" layoutX="14.0" layoutY="27.0" prefHeight="373.0" prefWidth="600.0" promptText="213" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+            <font>
+               <Font name="Serif Regular" size="12.0" />
+            </font></TextArea>
+      <MenuBar layoutY="2.0" prefHeight="24.0" prefWidth="224.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="Openn" mnemonicParsing="false" onAction="#handleOpenAction" text="Open" />
+                  <MenuItem fx:id="Savee" mnemonicParsing="false" onAction="#handleSaveAction" text="Save" />
+              <MenuItem fx:id="Closee" mnemonicParsing="false" onAction="#handleCloseActionn" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Format">
+            <items>
+              <MenuItem fx:id="Sizeee" mnemonicParsing="false" onAction="#changeFontSize" text="Size">
+                        <graphic>
+                           <TextField fx:id="Sizee" />
+                        </graphic></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#changeFontItalic" text="Italic" />
+                  <MenuItem mnemonicParsing="false" onAction="#changeFontBold" text="Bold" />
+                  <MenuItem fx:id="Underlinee" mnemonicParsing="false" onAction="#updateTextUnderline" text="Underline" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Color">
+            <items>
+              <MenuItem fx:id="updateColor" mnemonicParsing="false" onAction="#updateColor" text="Color" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Print">
+              <items>
+                <MenuItem fx:id="printText" mnemonicParsing="false" onAction="#printText" text="Print" />
+                  <MenuItem fx:id="fprintText" mnemonicParsing="false" onAction="#fprintText" text="Print set up" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+              <items>
+                <MenuItem fx:id="showAboutWindow" mnemonicParsing="false" onAction="#showAboutWindow" text="About" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>
+</VBox>
